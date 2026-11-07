@@ -7,7 +7,7 @@ description: Publish the site as it is on the current branch to a private previe
 
 The person wants a link to show their changes to someone, without touching the live site. Do not push, merge or commit anything for this.
 
-1. **Check the branch.** Run `git branch --show-current`. If it is `main`, say the preview will show the live version and ask whether they meant to preview a work branch.
+1. **Check the branch.** Run `git branch --show-current` and use the name in the steps below. Work normally happens on `main`.
 2. **Check for unsaved work.** The preview shows the files as they are in the folder now, including changes that are not committed. Mention this in one line if `git status --short` shows changes.
 3. **Make the preview copy.** Run, from the project folder:
    ```

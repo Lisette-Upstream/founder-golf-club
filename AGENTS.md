@@ -9,21 +9,20 @@ This is the website for Founder Golf Club (foundergolfclub.nl). The people worki
 - When you finish, say what changed, how to view it, and what is not done yet.
 - If a request is unclear, ask one short question before you start.
 
-## Never work on `main`
+## Work on `main`, push only when asked
 
-`main` is the live website. Anything that lands on `main` is published to foundergolfclub.nl within about a minute.
+All work happens on `main`. Do not create branches or pull requests.
 
-1. Before you start, get the latest version: `git switch main` and `git pull`.
-2. Make a new branch for each task, with a short descriptive name, for example `copy/update-who-page` or `design/new-hero`.
-3. Commit your work on that branch, with a clear message that describes the change.
-4. Let the person check the change in the local preview (see below).
-5. Only when the person explicitly asks you to publish: switch to `main`, run `git pull`, merge the branch into `main`, and push `main`. Then tell them the change will be live in about a minute.
+Pushing `main` to GitHub is what publishes the site: foundergolfclub.nl updates within about a minute. Committing alone does not publish anything.
 
-This project does not use pull requests. Do not open one.
+1. Before you start, get the latest version: `git pull`.
+2. Make the change and let the person check it in the local preview (see below).
+3. Commit with a clear message that describes the change.
+4. Only when the person explicitly asks you to publish: run `git pull`, then `git push`. Then tell them the change will be live in about a minute.
 
-To share changes for feedback before they go live, publish a private preview link (in Claude: `/preview`). Never push or merge to make a preview.
+To share changes for feedback before they go live, publish a private preview link (in Claude: `/preview`). Never push to make a preview.
 
-Never force-push, delete branches, or rewrite history unless the person asks for it and understands what it does.
+Never force-push or rewrite history unless the person asks for it and understands what it does.
 
 ## How the site works
 
