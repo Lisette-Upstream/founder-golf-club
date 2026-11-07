@@ -16,8 +16,12 @@ This is the website for Founder Golf Club (foundergolfclub.nl). The people worki
 1. Before you start, get the latest version: `git switch main` and `git pull`.
 2. Make a new branch for each task, with a short descriptive name, for example `copy/update-who-page` or `design/new-hero`.
 3. Commit your work on that branch, with a clear message that describes the change.
-4. Push the branch and open a pull request. Vercel usually makes a preview link for the branch. Share it so people can check the change before it goes live.
-5. Only merge into `main`, or push to `main`, when the person explicitly asks you to publish.
+4. Let the person check the change in the local preview (see below).
+5. Only when the person explicitly asks you to publish: switch to `main`, run `git pull`, merge the branch into `main`, and push `main`. Then tell them the change will be live in about a minute.
+
+This project does not use pull requests. Do not open one.
+
+To share changes for feedback before they go live, publish a private preview link (in Claude: `/preview`). Never push or merge to make a preview.
 
 Never force-push, delete branches, or rewrite history unless the person asks for it and understands what it does.
 
