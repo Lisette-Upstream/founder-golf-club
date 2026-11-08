@@ -4,74 +4,233 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Founder Golf Club</title>
-  <meta name="description" content="A quarterly get-together for founders who golf, or are beginning to.">
+  <meta name="description" content="A quarterly round of golf for tech founders in the Netherlands. A different club every time.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foundergolfclub.nl/">
+  <meta property="og:title" content="Founder Golf Club">
+  <meta property="og:description" content="Fewer pitch decks. More pitching wedges. A quarterly round of golf for tech founders in the Netherlands.">
+  <meta property="og:image" content="https://www.foundergolfclub.nl/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/familjen-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
 </head>
 <body>
-  <div class="hero">
-    <div class="hero-content wrap">
-      <header class="site-header">
-        <a class="logo" href="/">Founder Golf Club</a>
-        <nav class="nav" aria-label="Main">
-          <a href="/what/">What</a>
-          <a href="/who/">Who</a>
-          <a href="/how/">How</a>
-        </nav>
-      </header>
-      <div class="hero-copy">
-        <h1>Fewer pitch decks.<br>More pitching wedges.</h1>
-        <p>Founder Golf Club is a quarterly get-together for founders who golf, or are beginning to.</p>
-        <a class="button button-white" href="https://milaprojects.notion.site/40cae63767768053b13bd6b14be5f0df?pvs=105">Apply to join</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="logo" href="#top"><svg class="logo-flag" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path d="M11 6.5v19" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path class="flag-cloth" d="M12.3 6.5 24 11.5l-11.7 5z" fill="currentColor"/></svg><span>Founder Golf Club</span></a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#why">Why join</a>
+        <a href="#who">Who</a>
+        <a href="#how">How it works</a>
+        <a href="#etiquette">Etiquette</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-white button-small" href="https://milaprojects.notion.site/40cae63767768053b13bd6b14be5f0df" target="_blank" rel="noopener">Apply</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
       </div>
     </div>
-    <div class="hero-art">
-      <img class="art-wide" src="/images/hero-wide.webp" alt="A golf green with a red and white flag and a mountain behind it, the image blurring and fading into green towards the left">
-      <img class="art-tall" src="/images/hero-tall.webp" alt="A golf green with a red and white flag and mountains behind it, the sky blurring and fading into green towards the top">
-    </div>
-  </div>
+  </header>
 
-  <main>
-    <section class="cards wrap" aria-label="About the club">
-      <a class="card" href="/what/">
-        <div>
-          <h2>What</h2>
-          <p>A quarterly get-together at a different golf club every time.</p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <h1>Fewer pitch decks.<br>More pitching wedges.</h1>
+          <p class="hero-lead">A quarterly round of golf for tech founders. A different club every time, all organised for you.</p>
+          <div class="hero-actions">
+            <a class="button button-white" href="https://milaprojects.notion.site/40cae63767768053b13bd6b14be5f0df" target="_blank" rel="noopener">Apply for a tee time</a>
+          </div>
         </div>
-        <span>Read more</span>
-      </a>
-      <a class="card" href="/who/">
-        <div>
-          <h2>Who</h2>
-          <p>Tech founders at seed stage and beyond, from any sector, anywhere in the Netherlands.</p>
-        </div>
-        <span>Read more</span>
-      </a>
-      <a class="card" href="/how/">
-        <div>
-          <h2>How</h2>
-          <p>Apply via the form, and we'll keep you posted on upcoming events.</p>
-        </div>
-        <span>Read more</span>
-      </a>
+        <figure class="hero-photo">
+          <img src="/images/hero-tee.webp" width="900" height="1200" alt="A tee box between tall pines, with a chalet, mountains and a sunlit cloud in the distance">
+        </figure>
+      </div>
     </section>
 
-    <section class="closing">
+    <section class="section section-sage" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <p class="eyebrow">Why join</p>
+        <h2 id="why-title">Why swing by?</h2>
+        <p class="statement">Golf has built business relationships for a century, and we kept the good parts.</p>
+        <div class="reasons">
+          <article class="reason">
+            <p class="reason-tag">Peers</p>
+            <h3>You learn a lot from how someone handles a bunker.</h3>
+            <p>Meet founders at your stage who know what a hard quarter feels like. A round shows character fast: patience, honesty about your score, and how you take a bad shot.</p>
+          </article>
+          <article class="reason">
+            <p class="reason-tag">Trust</p>
+            <h3>What happens on the fairway stays on the fairway.</h3>
+            <p>A safe space to talk through the hard parts of building a company: hiring, fundraising, co-founder tension. Everything shared stays in the group.</p>
+          </article>
+          <article class="reason">
+            <p class="reason-tag">Headspace</p>
+            <h3>A mulligan for your week.</h3>
+            <p>Fresh air, a walk, a few bad shots and a drink at the clubhouse. Founders are allowed to switch off too.</p>
+          </article>
+          <article class="reason">
+            <p class="reason-tag">Growth</p>
+            <h3>Improve your swing, and your strategy.</h3>
+            <p>A fairway to growing as a leader, with insights from peers on how they grow their businesses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="who" aria-labelledby="who-title">
+      <div class="wrap">
+        <p class="eyebrow">Who it's for</p>
+        <h2 id="who-title">Playing partners at your stage.</h2>
+        <p class="statement">We curate the group for every round, so you always play alongside founders at a similar stage.</p>
+
+        <p class="criteria-label">Who can join</p>
+        <ul class="criteria-row">
+          <li>
+            <h3>A tech founder</h3>
+            <p>Founder or co-founder of a tech company.</p>
+          </li>
+          <li>
+            <h3>At seed stage or beyond</h3>
+            <p>You've raised a seed round, generate revenue, or have similar market share.</p>
+          </li>
+          <li>
+            <h3>From any sector</h3>
+            <p>Sector-agnostic. Mixing industries is a feature.</p>
+          </li>
+          <li>
+            <h3>A golfer, or learning to be</h3>
+            <p>We arrange driving range sessions for beginners.</p>
+          </li>
+        </ul>
+
+        <div class="guests-note">
+          <p class="guests-title">Guests, by invitation only, per event</p>
+          <ul>
+            <li><strong>C-suite:</strong> invited on occasion, where it fits the event. They have real skin in the game (equity or ownership) and are a major contributor to the leadership team.</li>
+            <li><strong>Investors:</strong> invited on an event-by-event basis.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sage" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">From application to first tee.</h2>
+        <ol class="steps">
+          <li>
+            <p class="step-number">Hole 1</p>
+            <h3>Apply</h3>
+            <p>Fill in the form with your golf level, company stage, industry and email.</p>
+          </li>
+          <li>
+            <p class="step-number">Hole 2</p>
+            <h3>We review it</h3>
+            <p>We read every application and let you know by email if you're in.</p>
+          </li>
+          <li>
+            <p class="step-number">Hole 3</p>
+            <h3>Tee off</h3>
+            <p>Once you're in, events and ways to sign up for them will be shared with you.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-green" id="etiquette" aria-labelledby="etiquette-title">
+      <div class="wrap">
+        <p class="eyebrow">Etiquette</p>
+        <h2 id="etiquette-title">House rules.</h2>
+        <ul class="rules">
+          <li><h3>Everyone plays the same course.</h3><p>Respect for every stage, background and golf level.</p></li>
+          <li><h3>What's said in the group stays in the group.</h3><p>Unless the person who shared it says otherwise.</p></li>
+          <li><h3>The only pitch here is with a wedge.</h3></li>
+          <li><h3>Harassment is out of bounds.</h3></li>
+          <li><h3>We're guests on their course.</h3><p>Respect the club's rules, staff and facilities.</p></li>
+          <li><h3>Keep the group chat on the fairway.</h3><p>WhatsApp is for logistics, intros and updates. No spam.</p></li>
+        </ul>
+        <p class="rules-note">The organisers can remove a member for breaking these rules.</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <h2 id="faq-title">Q&amp;A</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Does everyone who applies get in?</summary>
+            <p>No. We review every application and keep the group to founders at a similar stage. We'll let you know by email either way.</p>
+          </details>
+          <details>
+            <summary>How often do you meet?</summary>
+            <p>Four times a year, at a different golf club each time, somewhere in the Netherlands.</p>
+          </details>
+          <details>
+            <summary>Do I need a handicap?</summary>
+            <p>No, all levels are welcome. Some clubs ask for a golf proficiency certificate (GVB) or a handicap to play the course. We share the requirements with each event.</p>
+          </details>
+          <details>
+            <summary>I'm a beginner. Can I still join?</summary>
+            <p>Yes. We arrange driving range sessions where beginners can practise together. We don't provide lessons, so we ask beginners to take them in their own time. That way you can eventually join us on the course.</p>
+          </details>
+          <details>
+            <summary>What does it cost?</summary>
+            <p>The price depends on the club and is shared with each event. You pay when you sign up, which confirms your spot.</p>
+          </details>
+          <details>
+            <summary>Can my company pay?</summary>
+            <p>Yes. We can invoice your company.</p>
+          </details>
+          <details>
+            <summary>Can I bring a co-founder or a friend?</summary>
+            <p>There are no general plus-ones. Co-founders and friends who meet the criteria can apply themselves, and members can always recommend other founders.</p>
+          </details>
+          <details>
+            <summary>Do investors join?</summary>
+            <p>We're founder-first. Now and then we invite investors, and C-suite leaders with equity or ownership and a major leadership role, to join a specific event. Invitation only.</p>
+          </details>
+          <details>
+            <summary>Where do I hear about new events?</summary>
+            <p>By email and in the members' WhatsApp group, together with details like timings, dress code and cancellation terms.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="apply" aria-labelledby="apply-title">
       <div class="closing-inner wrap">
         <div class="closing-text">
-          <h2>Join us at the next one.</h2>
-          <a class="button button-green" href="https://milaprojects.notion.site/40cae63767768053b13bd6b14be5f0df?pvs=105">Apply to join</a>
+          <p class="eyebrow">Apply</p>
+          <h2 id="apply-title">Your tee time is waiting.</h2>
+          <p>Tell us about your company and your swing. We'll keep you posted on the next round.</p>
+          <a class="button button-green" href="https://milaprojects.notion.site/40cae63767768053b13bd6b14be5f0df" target="_blank" rel="noopener">Apply to join</a>
         </div>
-        <img src="/images/sunset-tee.jpg" alt="A tee box between tall pines, with a chalet, mountains and a sunlit cloud in the distance" loading="lazy">
+        <div class="closing-photo">
+          <img src="/images/closing-green.webp" width="720" height="540" alt="A golf green with a red and white flag, with mountains in the distance" loading="lazy">
+        </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer wrap">
-    <span>Founder Golf Club</span>
-    <a href="/how/#privacy">Privacy</a>
+  <footer class="site-footer">
+    <div class="footer-inner wrap">
+      <p class="footer-tagline">Keep your head down and your burn rate low.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://milaprojects.notion.site/40cae63767768053b13bd6b14be5f0df" target="_blank" rel="noopener">Apply</a>
+        <a href="/contact/">Contact us</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+      <span class="footer-copy">© 2026 Founder Golf Club</span>
+    </div>
   </footer>
 </body>
 </html>

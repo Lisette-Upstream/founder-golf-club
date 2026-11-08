@@ -4,17 +4,20 @@ The website for Founder Golf Club: plain HTML and CSS, with no build step.
 
 ## What's where
 
-| Page | File |
+| Part | File |
 | --- | --- |
-| Home | `index.html` |
-| What | `what/index.html` |
-| Who | `who/index.html` |
-| How, house rules and privacy | `how/index.html` |
+| Home: one page with every section (why join, who, how it works, etiquette, FAQ) | `index.html` |
+| Apply page, with the sign-up form | `apply/index.html` |
+| Contact page, with the email address and the organisers | `contact/index.html` |
+| Privacy policy | `privacy/index.html` |
 | Colours, fonts and layout | `styles.css` |
-| Photos | `images/` |
+| Phone menu and menu highlighting | `script.js` |
+| Photos, the hero's contour lines, and the link preview image | `images/` |
 | Fonts | `fonts/` |
 
-To change the text, edit the page's HTML file. To change the main colours, edit the `:root` block at the top of `styles.css`.
+To change the text, edit the HTML file. Each section of the home page starts with a `<section>` line that names it, for example `id="faq"`. To change the main colours, edit the `:root` block at the top of `styles.css`.
+
+`images/og-image.jpg` is the picture that shows when someone shares the site on WhatsApp or LinkedIn.
 
 ## Preview on your computer
 
@@ -32,4 +35,4 @@ Vercel publishes the site automatically from the `main` branch. On Vercel, the f
 
 ## Fonts
 
-Bricolage Grotesque, Instrument Sans and DM Mono are served from this repository, so visitors' browsers don't contact Google Fonts. All three are licensed under the SIL Open Font License.
+Familjen Grotesk, Instrument Sans and DM Mono are served from this repository, so visitors' browsers don't contact Google Fonts. All three are licensed under the SIL Open Font License.

@@ -18,6 +18,7 @@ The person wants a link to show their changes to someone, without touching the l
    - Find the link: if you published the preview earlier in this conversation, use that URL. Otherwise list the person's artifacts (`action: "list"`, `limit: 200`) and look for the title "Founder Golf Club preview". If there is more than one, use the most recently updated.
    - If you found it and have not read or published it in this conversation, read it first (`action: "read"`).
    - Publish with the Artifact tool: `url` is the link you found, `file_path` is the printed `page`, `root` is the output folder, `files` is the printed `files` map with paths relative to `root`, and `description` is "Preview of the Founder Golf Club website, from the <branch> branch." Leave out `icon` when updating.
+   - When updating, remove files the site no longer has: list the link's files (`action: "list"`, `scope: "files"`, `url`) and add every path that is not in the printed `files` map (other than `index.html`) to `files` with the value `null`. Otherwise deleted pages stay on the preview.
    - Only if no preview link exists yet: publish without `url`, with `icon` set to `flag`.
    - Never create a second preview link when one exists.
 5. **Tell the person**, in plain language:
