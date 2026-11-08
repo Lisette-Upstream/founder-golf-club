@@ -7,7 +7,6 @@ The website for Founder Golf Club: plain HTML and CSS, with no build step.
 | Part | File |
 | --- | --- |
 | Home: one page with every section (why join, who, how it works, etiquette, FAQ) | `index.html` |
-| Apply page, with the sign-up form | `apply/index.html` |
 | Contact page, with the email address and the organisers | `contact/index.html` |
 | Privacy policy | `privacy/index.html` |
 | Colours, fonts and layout | `styles.css` |
