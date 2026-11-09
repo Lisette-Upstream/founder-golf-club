@@ -214,3 +214,17 @@ h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.2vw
 .person p:not(.person-role) { margin-top: 16px; font-size: 15px; color: var(--ink-soft); }
 .person-link { margin-top: auto; padding-top: 20px; display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-underline-offset: 4px; }
 @media (max-width: 720px) { .people { grid-template-columns: 1fr; } }
+
+/* Organisers strip on the home page */
+.organisers-strip { padding-top: clamp(56px, 7vw, 88px); padding-bottom: clamp(56px, 7vw, 88px); }
+.organisers-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.organisers-more { display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-underline-offset: 4px; }
+.quotes { margin-top: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 48px; }
+.quote { padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 20px; }
+.quote blockquote { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.25; letter-spacing: -.01em; text-wrap: balance; }
+.quote blockquote::before { content: "\201C"; }
+.quote blockquote::after { content: "\201D"; }
+.quote figcaption { margin-top: auto; display: flex; align-items: center; gap: 14px; font-size: 14px; color: var(--ink-soft); }
+.quote figcaption img { flex: none; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: 50% 30%; }
+.quote figcaption strong { display: block; font-weight: 600; color: var(--ink); }
+@media (max-width: 720px) { .quotes { grid-template-columns: 1fr; gap: 32px; } }
