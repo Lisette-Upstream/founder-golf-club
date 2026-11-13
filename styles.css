@@ -108,6 +108,13 @@ h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.2vw
   .hero-video { transform: none; }
 }
 @media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+/* The video is only a background: no taps, and never the phone's own play button.
+   When the phone won't play it, it is hidden and the still image behind it shows. */
+.hero-video { pointer-events: none; }
+.hero-video.is-blocked { display: none; }
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-start-playback-button,
+.hero-video::-webkit-media-controls-overlay-play-button { display: none !important; -webkit-appearance: none; }
 
 /* Sections */
 .section { padding-top: var(--section-space); padding-bottom: var(--section-space); }

@@ -59,3 +59,17 @@ if (sections.length) {
   window.addEventListener("load", highlightCurrentSection);
   highlightCurrentSection();
 }
+
+// Hero video: some phones block videos from playing by themselves (for example
+// an iPhone in Low Power Mode). Then hide the video so the still image behind it
+// shows, instead of a big play button.
+const heroVideo = document.querySelector(".hero-video");
+if (heroVideo) {
+  const hideVideo = () => heroVideo.classList.add("is-blocked");
+  heroVideo.muted = true;
+  const attempt = heroVideo.play();
+  if (attempt && typeof attempt.catch === "function") attempt.catch(hideVideo);
+  // Safety net: if it still hasn't started after a few seconds, show the still instead
+  setTimeout(() => { if (heroVideo.paused) hideVideo(); }, 4000);
+  heroVideo.addEventListener("playing", () => heroVideo.classList.remove("is-blocked"));
+}
