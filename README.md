@@ -16,7 +16,7 @@ The website for Founder Golf Club: plain HTML and CSS, with no build step.
 
 To change the text, edit the HTML file. Each section of the home page starts with a `<section>` line that names it, for example `id="faq"`. To change the main colours, edit the `:root` block at the top of `styles.css`.
 
-`images/og-image.jpg` is the picture that shows when someone shares the site on WhatsApp or LinkedIn.
+`images/og-share.jpg` is the picture that shows when someone shares the site on WhatsApp or LinkedIn.
 
 ## Preview on your computer
 
