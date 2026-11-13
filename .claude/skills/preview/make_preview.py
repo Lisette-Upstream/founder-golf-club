@@ -18,9 +18,9 @@ import sys
 
 SKIP_DIRS = {".git", ".claude", ".vercel", "node_modules"}
 KEEP_EXT = {".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".webp", ".svg",
-            ".gif", ".ico", ".woff2", ".woff"}
+            ".gif", ".ico", ".woff2", ".woff", ".mp4", ".webm"}
 
-HTML_LINK = re.compile(r'(\b(?:href|src)=")(/[^"]*)(")')
+HTML_LINK = re.compile(r'(\b(?:href|src|poster)=")(/[^"]*)(")')
 CSS_URL = re.compile(r'(url\(\s*["\']?)(/[^"\')]*)(["\']?\s*\))')
 
 

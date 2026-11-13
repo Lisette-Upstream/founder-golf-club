@@ -2,12 +2,27 @@
 
 const menuButton = document.querySelector(".menu-button");
 const nav = document.getElementById("nav");
+const header = document.querySelector(".site-header");
+const hero = document.querySelector(".hero");
+
+// Homepage: the header is see-through over the hero video at the very top, and
+// fades to solid as soon as you start scrolling or open the phone menu.
+function updateHeader() {
+  if (!header || !hero || !document.body.classList.contains("has-hero")) return;
+  const scrolled = window.scrollY > 4;
+  const menuOpen = nav && nav.classList.contains("is-open");
+  header.classList.toggle("is-solid", scrolled || menuOpen);
+}
+window.addEventListener("scroll", updateHeader, { passive: true });
+window.addEventListener("resize", updateHeader);
+updateHeader();
 
 if (menuButton && nav) {
   const setOpen = (open) => {
     nav.classList.toggle("is-open", open);
     menuButton.setAttribute("aria-expanded", String(open));
     menuButton.textContent = open ? "Close" : "Menu";
+    updateHeader();
   };
   menuButton.addEventListener("click", () => setOpen(!nav.classList.contains("is-open")));
   nav.addEventListener("click", (event) => {
