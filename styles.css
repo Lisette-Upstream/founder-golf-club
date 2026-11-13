@@ -255,7 +255,7 @@ h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.2vw
 /* Organisers strip on the home page */
 .organisers-strip { padding-top: clamp(56px, 7vw, 88px); padding-bottom: clamp(56px, 7vw, 88px); }
 .organisers-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
-.organisers-more { display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; text-underline-offset: 4px; }
+.organisers-more { display: flex; width: max-content; margin-left: auto; align-items: center; min-height: 44px; margin-top: 28px; font-size: 15px; font-weight: 600; text-underline-offset: 4px; }
 .quotes { margin-top: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 48px; }
 .quote { padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 20px; }
 .quote blockquote { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.25; letter-spacing: -.01em; text-wrap: balance; }
