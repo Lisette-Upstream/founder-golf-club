@@ -71,9 +71,10 @@ h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.2vw
 .menu-button { display: none; min-height: 36px; padding: 0 14px; border: 1px solid rgba(255, 255, 255, .35); border-radius: 999px; background: transparent; color: var(--white); font: 600 14px var(--body); cursor: pointer; }
 
 @media (max-width: 960px) {
-  .header-inner { flex-wrap: wrap; gap: 0 12px; }
+  /* Fixed space above and below the logo row, so it stays put when the menu opens */
+  .header-inner { flex-wrap: wrap; gap: 0 12px; min-height: 0; padding-top: 14px; padding-bottom: 14px; }
   .menu-button { display: inline-flex; align-items: center; }
-  .nav { order: 3; display: none; width: 100%; flex-direction: column; align-items: stretch; padding: 4px 0 16px; }
+  .nav { order: 3; display: none; width: 100%; flex-direction: column; align-items: stretch; margin-top: 14px; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, .1); }
   .nav.is-open { display: flex; }
   .nav a { min-height: 46px; padding: 0 12px; font-size: 16px; border-radius: 10px; }
 }
@@ -264,6 +265,8 @@ h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 3.2vw
 .quote figcaption { margin-top: auto; display: flex; align-items: center; gap: 14px; font-size: 14px; color: var(--ink-soft); }
 .quote figcaption img { flex: none; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: 50% 30%; }
 .quote figcaption strong { display: block; font-weight: 600; color: var(--ink); }
+.quote figcaption strong a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(14, 42, 31, .3); }
+.quote figcaption strong a:hover { text-decoration-color: currentColor; }
 @media (max-width: 720px) { .quotes { grid-template-columns: 1fr; gap: 32px; } }
 
 /* Q&A: less space above and below than the other sections, so the list stays compact */
